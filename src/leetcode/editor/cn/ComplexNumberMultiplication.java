@@ -30,7 +30,7 @@ package leetcode.editor.cn;
 //
 // 
 //
-// 提示： 
+//  提示：
 //
 // 
 // num1 和 num2 都是有效的复数表示。 
