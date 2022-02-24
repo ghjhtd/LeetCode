@@ -45,18 +45,40 @@ package leetcode.editor.cn;
 ////
 //
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzz{
     public static void main(String[] args) {
         Solution solution = new FizzBuzz().new Solution();
-        int a = 11;
+        List list = solution.fizzBuzz(5);
+        System.out.println(list);
+        for(Object s : list){
+            System.out.println(s);
+        }
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> fizzBuzz(int n) {
-        return null;
+        List<String > resoult = new ArrayList<>();
+        for(int i = 1; i <= n ; i++){
+            resoult.add(fizz(i));
+        }
+        return resoult;
+    }
+
+    public String fizz(int n){
+        if(n % 3 == 0 && n % 5 == 0){
+            return "FizzBuzz";
+        }
+        if(n % 3 == 0){
+            return "Fizz";
+        }
+        if(n % 5 == 0){
+            return "Buzz";
+        }
+        return n + "";
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
