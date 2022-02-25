@@ -50,20 +50,23 @@ public class FractionAdditionAndSubtraction {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String fractionAddition(String expression) {
+            //字符串分割
             String[] exp = null;
             if (expression.charAt(0) == '-') {
                 exp = expression.substring(1, expression.length()).split("\\+|\\-");
             } else {
                 exp = expression.split("\\+|\\-");
             }
+            //字符转数字
             int[][] nums = new int[exp.length][2];
             int[] common = {0, 1};
             int temp = 0;
             for (int i = 0; i < exp.length; i++) {
                 nums[i][0] = Integer.parseInt(exp[i].split("/")[0]);
                 nums[i][1] = Integer.parseInt(exp[i].split("/")[1]);
-                common[1] = common[1] * nums[i][1];
+                common[1] = common[1] * nums[i][1]; //分母通分
             }
+            //给负数赋值
             int index = expression.indexOf('-');
             int index1 = expression.indexOf('/');
             int count = 0;
@@ -75,11 +78,12 @@ public class FractionAdditionAndSubtraction {
                 nums[count][0] = -nums[count][0];
                 index = expression.indexOf('-', index + 1);
             }
+            //分子求和
             for (int i = 0; i < exp.length; i++) {
                 temp = common[1] / nums[i][1];
                 common[0] = common[0] + temp * nums[i][0];
             }
-
+            //约分
             while (common[0] % 2 == 0 && common[1] % 2 == 0) {
                 common[0] = common[0] / 2;
                 common[1] = common[1] / 2;
