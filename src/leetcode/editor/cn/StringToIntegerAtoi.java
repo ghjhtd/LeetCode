@@ -84,39 +84,55 @@ package leetcode.editor.cn;
 public class StringToIntegerAtoi{
     public static void main(String[] args) {
         Solution solution = new StringToIntegerAtoi().new Solution();
-        System.out.println(solution.myAtoi("+-12"));
+        System.out.println(solution.myAtoi("2147483646"));
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int myAtoi(String s) {
-        if(s == null){
-            return 0;
-        }
-        StringBuilder buffer = new StringBuilder();
         s = s.trim();
-        int resoult = 0;
+        s = s + "   ";
+        StringBuilder buffer = new StringBuilder();
+        int state = 0;
         for(int i = 0; i < s.length(); i++){
-            if(((s.charAt(i) == '+' || s.charAt(i) == '-') && (((s.charAt(i) - '0') >= 0) && (s.charAt(i) - '0') <= 9) )|| (((s.charAt(i) - '0') >= 1) && (s.charAt(i) - '0') <= 9)){
-                buffer.append(s.charAt(i++));
-                for(int j = i; j <= s.length(); j++){
-                    if(j == s.length() || !( ((s.charAt(j) - '0') >= 0) && ((s.charAt(j) - '0') <= 9) )){
-                        if(Long.parseLong(buffer.toString()) > (Math.pow(2,31) -1)){
-                            return (int) (Math.pow(2,31) -1);
-                        }
-                        if(Long.parseLong(buffer.toString()) < (-Math.pow(2,31))){
-                            return (int) -Math.pow(2,31);
-                        }
-                        return Integer.parseInt(buffer.toString());
-                    }else{
-                        buffer.append(s.charAt(j));
-                    }
+            if(state == 0){
+                if(s.charAt(i) == '+' || s.charAt(i) == '-' || Character.isDigit(s.charAt(i))){
+                    state = 1;
+                    buffer.append(s.charAt(i));
+                }else{
+                    return 0;
                 }
-            }else{
-                return resoult;
+            }else if(state == 1){
+                if(Character.isDigit(s.charAt(i))){
+                    buffer.append(s.charAt(i));
+                }else{
+                    state = 2;
+                }
+            }else if(state == 2){
+//                buffer = new StringBuilder(buffer.toString().replaceAll("\\-^(0+)", ""));
+//                buffer = new StringBuilder(buffer.toString().replaceAll("^(0+)", ""));
+//                if(buffer.length() > 10){
+//                    if(buffer.charAt(0) == '-'){
+//                        return (int) -Math.pow(2, 31);
+//                    }else{
+//                        return (int) (Math.pow(2, 31) - 1);
+//                    }
+//                }
+                try{
+                    if(Double.parseDouble(buffer.toString()) > Math.pow(2,31) - 1){
+                        return (int) (Math.pow(2, 31) - 1);
+                    }
+                    if(Double.parseDouble(buffer.toString()) < -Math.pow(2,31)){
+                        return (int) -Math.pow(2, 31);
+                    }
+                    return Integer.parseInt(buffer.toString());
+                }
+                catch (Exception e){
+                    return 0;
+                }
             }
         }
-        return resoult;
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
