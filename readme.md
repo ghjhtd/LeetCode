@@ -37,3 +37,10 @@ while (i < t.length() && j < s.length()) {
                 ++j;
             }
 ~~~
+### 高精度运算
++ 67 ：**二进制求和**：这题看题解get到一个点，Java中java.math.BigInteger就是用来表示任意大小的整数。BigInteger内部用一个int[]数组来模拟一个非常大的整数：
+```java
+public String addBinary(String a, String b) {
+        return new BigInteger(a, 2).add(new BigInteger(b, 2)).toString(2);
+        }
+```
