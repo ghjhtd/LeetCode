@@ -44,3 +44,4 @@ public String addBinary(String a, String b) {
         return new BigInteger(a, 2).add(new BigInteger(b, 2)).toString(2);
         }
 ```
++ **高精度运算**:306,逻辑比较麻烦，可以看作一道综合题。
