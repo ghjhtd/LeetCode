@@ -151,6 +151,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ImplementStrstr.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ImplementStrstr.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com28" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ImplementStrstr.java" />
+              <option name="titleSlug" value="implement-strstr" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/IntegerToEnglishWords.java">
           <value>
             <LeetcodeEditor>
@@ -291,6 +302,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RelativeRanks.java" />
               <option name="titleSlug" value="relative-ranks" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/RepeatedStringMatch.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RepeatedStringMatch.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com686" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RepeatedStringMatch.java" />
+              <option name="titleSlug" value="repeated-string-match" />
             </LeetcodeEditor>
           </value>
         </entry>
