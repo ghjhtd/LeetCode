@@ -51,4 +51,4 @@ public String addBinary(String a, String b) {
 
 ### 字符串匹配:
 + 28:**实现 strStr()**：此题采用Knuth-Morris-Pratt 算法较为适宜，偷懒直接调用API，有空实现一下。KMP 算法是一个快速查找匹配串的算法，它的作用其实就是本题问题：如何快速在「原字符串」中找到「匹配字符串」。
-+ 
++ 686:**重复叠加字符串匹配**:此题也是KMP,tnnd还是得好好学一下
