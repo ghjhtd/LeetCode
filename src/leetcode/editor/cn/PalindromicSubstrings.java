@@ -45,12 +45,9 @@ public class PalindromicSubstrings{
 class Solution {
     public int countSubstrings(String s) {
         int count = 0;
-        int a = 0, b = 0;
         for(int i = 0; i < s.length(); i++){
-            a = count_len(s, i, i)/2 + 1;
-            b = count_len(s, i, i+1)/2;
-            count += a;
-            count += b;
+            count += count_len(s, i, i)/2 + 1;
+            count += count_len(s, i, i+1)/2;
         }
         return count;
     }
