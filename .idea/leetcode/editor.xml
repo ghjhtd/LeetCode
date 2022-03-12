@@ -122,6 +122,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FindTheClosestPalindrome.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/FindTheClosestPalindrome.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com564" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/FindTheClosestPalindrome.java" />
+              <option name="titleSlug" value="find-the-closest-palindrome" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FizzBuzz.java">
           <value>
             <LeetcodeEditor>
@@ -335,6 +346,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/PlusOne.java" />
               <option name="titleSlug" value="plus-one" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/PowerOfTwo.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/PowerOfTwo.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com231" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/PowerOfTwo.java" />
+              <option name="titleSlug" value="power-of-two" />
             </LeetcodeEditor>
           </value>
         </entry>
