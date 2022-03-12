@@ -47,13 +47,27 @@ package leetcode.editor.cn;
 public class ReverseInteger{
     public static void main(String[] args) {
         Solution solution = new ReverseInteger().new Solution();
-        
+        System.out.println(solution.reverse(32768));
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int reverse(int x) {
-
+        if(x == 0){
+            return 0;
+        }
+        StringBuilder resoult = new StringBuilder();
+        String s = Math.abs(x) + "";
+        int res = 0;
+        for(int i = 0; i < s.length(); i++){
+            resoult.append(s.charAt(s.length() - 1 -i));
+        }
+        try {
+            res = Integer.parseInt(resoult.toString());
+        }catch (Exception e){
+            return 0;
+        }
+        return x / Math.abs(x) * res;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
