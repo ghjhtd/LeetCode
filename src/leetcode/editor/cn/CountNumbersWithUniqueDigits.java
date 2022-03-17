@@ -18,8 +18,22 @@ public class CountNumbersWithUniqueDigits{
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int countNumbersWithUniqueDigits(int n) {
+     int[] fn;
+     {
+        fn = new int[9];
+        fn[0] = 1;
+        fn[1] = 10;
+        int g = 9;
+        int f = 9;
+        for (int i = 2; i < 9; i++) {
+            f = f * g;
+            fn[i] = fn[i - 1] + f;
+            g = g - 1;
+        }
+    }
 
+    public int countNumbersWithUniqueDigits(int n) {
+        return fn[n];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
