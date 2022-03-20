@@ -92,6 +92,9 @@ package leetcode.editor.cn;
 // 
 // Related Topics 栈 深度优先搜索 字符串 👍 125 👎 0
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class LongestAbsoluteFilePath{
     public static void main(String[] args) {
         Solution solution = new LongestAbsoluteFilePath().new Solution();
@@ -99,11 +102,69 @@ public class LongestAbsoluteFilePath{
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int lengthLongestPath(String input) {
+public class Solution {
+    class Node{
+        public int level;
+        public int sum;
+        public Node(int level, int sum){
+            this.level   = level;
+            this.sum     = sum;
+        }
 
     }
+
+    public int lengthLongestPath(String input) {
+        String[] splits = input.split("\n");
+        Deque<Node> stack = new ArrayDeque<>();
+
+        int res = 0;
+        for(int i = 0; i < splits.length;){
+            int howManyTabs = countTab(splits[i]);
+
+            if(stack.isEmpty()){
+                if(splits[i].indexOf('.') != -1){
+                    res = Math.max(res, splits[i].length());
+                }else{
+                    Node newNode = new Node(howManyTabs, splits[i].length() - howManyTabs);
+                    stack.push(newNode);
+                }
+                i++;
+            }else{
+                Node peek = stack.peek();
+                //上下级关系
+                if(peek.level + 1 == howManyTabs){
+                    Node newNode = new Node(howManyTabs, splits[i].length() + peek.sum - howManyTabs + 1);
+                    if(splits[i].indexOf('.') != -1){
+                        res = Math.max(res, newNode.sum);
+                    }else{
+                        stack.push(newNode);
+                    }
+                    i++;
+                }else{
+                    stack.pop();
+                }
+            }
+        }
+
+        return res;
+    }
+
+    public int countTab(String s){
+        StringBuilder sb = new StringBuilder();
+        int count = 0;
+        for(int i = 0;; i++){
+            sb.append("\t");
+            if(s.startsWith(sb.toString()))
+                count++;
+            else
+                break;
+        }
+
+        return count;
+    }
+
 }
+
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
