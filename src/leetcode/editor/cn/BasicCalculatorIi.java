@@ -47,13 +47,45 @@ package leetcode.editor.cn;
 public class BasicCalculatorIi{
     public static void main(String[] args) {
         Solution solution = new BasicCalculatorIi().new Solution();
-        
+        StringBuilder builder = new StringBuilder("3+ 2 * 2 ");
+        System.out.println(solution.calculate("2*3*4"));
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int calculate(String s) {
 
+        StringBuilder builder = new StringBuilder(s);
+        for(int i = 0; i < builder.length(); i++){
+            if(builder.charAt(i) == '/' || builder.charAt(i) == '*'){
+                i = replace(builder, i);
+            }
+        }
+        String[] nums = builder.toString().replace("-", "+-").split("\\+");
+        int count = 0;
+        for(String ss : nums){
+            count += Integer.parseInt(ss.trim());
+        }
+        return count;
+    }
+
+    public int replace(StringBuilder builder, int index){
+        int left = index-1, right = index+1;
+        while (left >= 0 && builder.charAt(left) != '+' && builder.charAt(left) != '-'&& builder.charAt(left) != '*' && builder.charAt(left) != '/'){
+            left --;
+        }
+        while (right < builder.length() && builder.charAt(right) != '+' && builder.charAt(right) != '-'&& builder.charAt(right) != '*' && builder.charAt(right) != '/'){
+            right ++;
+        }
+        int a = Integer.parseInt(builder.substring(left + 1, index).trim());
+        int b = Integer.parseInt(builder.substring(index + 1, right).trim());
+        if(builder.charAt(index) == '*'){
+            builder.replace(left + 1, right,a*b+"");
+        }
+        else {
+            builder.replace(left + 1, right,a/b+"");
+        }
+        return left;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
