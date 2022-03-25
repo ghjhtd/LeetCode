@@ -45,20 +45,9 @@ package leetcode.editor.cn;
 import java.util.List;
 
 public class ReverseLinkedList{
-    public static ListNode AddNode(ListNode last, int new_num){
-        ListNode temp = new ListNode(new_num);
-        last.next = temp;
-        return temp;
-    }
 
     public static void main(String[] args) {
-        Solution solution = new ReverseLinkedList().new Solution();
-        ListNode head = new ListNode(1);
-        ListNode temp = head;
-        for(int i = 2; i < 6; i++){
-            temp = AddNode(temp, i);
-        }
-        head = solution.reverseList(head);
+
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -104,9 +93,6 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
-
-}
-
 class ListNode {
     int val;
     ListNode next = null;
@@ -114,3 +100,5 @@ class ListNode {
     ListNode(int val) { this.val = val; this.next = null;}
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
+}
+
