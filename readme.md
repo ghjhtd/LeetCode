@@ -76,3 +76,19 @@ public String addBinary(String a, String b) {
 ###哈希表的查找、插入及删除
 + 166：**分数到小数：**此题较为繁琐，需要注意使用Long类型，考虑的因素较多，除法判断是否循环小数可以用哈希表，每次除法的余数如果和之前的一样就代表循环了。
 + 466:**统计重复个数：**不愧是hard题，自己写的题解直接超时了，最后直接cv的，有空可以看看，这题还是有点意思的
++ ArrayList.toArray()说明：
+```java
+        // 当list中的数据类型都一致时可以将list转化为数组
+        Object arr2[] = list.toArray();
+        System.out.println("从list转换成的对象数组长度为：" + arr2.length); // 输出：从list转换成的对象数组长度为：4
+        // 在转化为其它类型的数组时需要强制类型转换，并且，要使用带参数的toArray方法，参数为对象数组.
+        // 将list中的内容放入参数数组中，当参数数组的长度小于list的元素个数时，会自动扩充数组的长度以适应list的长度
+        Double arr3[] = list.toArray(new Double[0]);
+        System.out.println("从list转换成的字符串数组长度为：" + arr3.length); // 输出：从list转换成的字符串数组长度为：4
+        print(arr3); // 输出：1.23 4.57 2.38 4.598
+        // 分配一个长度与list的长度相等的字符串数组
+        Double[] arr4 = list.toArray(new Double[list.size()]);
+        System.out.println("从list转换成的字符串数组长度为：" + arr4.length); // 输出：从list转换成的字符串数组长度为：4
+        print(arr4); // 输出： 1.23 4.57 2.38 4.598
+```
++ 560:**和为k的子数组：**对于此题，求数组中某一段的值，可以采用前缀表的形式，将前缀表用哈希表存储起来可以进行进一步的优化。
