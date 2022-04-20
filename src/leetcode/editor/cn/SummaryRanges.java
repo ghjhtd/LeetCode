@@ -49,18 +49,44 @@ package leetcode.editor.cn;
 // 
 // Related Topics 数组 👍 210 👎 0
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SummaryRanges{
     public static void main(String[] args) {
         Solution solution = new SummaryRanges().new Solution();
-        
+        for(String s : solution.summaryRanges(new int[]{0,2,3,4,6,8,9})){
+            System.out.println(s);
+        }
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> summaryRanges(int[] nums) {
-
+        if(nums.length == 0){
+            return new ArrayList<>();
+        }
+        List<String> list = new ArrayList<>();
+        int first = nums[0], last = first;
+        for(int i : nums){
+            if(last != i){
+                if(last - 1 != first){
+                    list.add(first + "->" + (last - 1));
+                }else {
+                    list.add(first + "");
+                }
+                first = i;
+                last = first + 1;
+            }else {
+                last++;
+            }
+        }
+        if(nums[nums.length - 1] == first){
+            list.add(first + "");
+        }else{
+            list.add(first + "->" + (last - 1));
+        }
+        return list;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
