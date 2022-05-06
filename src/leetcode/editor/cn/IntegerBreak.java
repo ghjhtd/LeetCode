@@ -38,7 +38,15 @@ public class IntegerBreak{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int integerBreak(int n) {
-
+        int[] dp = new int[n + 1];
+        for(int i = 2; i <= n; i++){
+            int curmax = 0;
+            for(int j = 1; j < i; j++){
+                curmax = Math.max(curmax, Math.max(j * (i - j), j * dp[i - j]));
+            }
+            dp[i] = curmax;
+        }
+        return dp[n];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

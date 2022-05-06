@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/CreateMaximumNumber.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/CreateMaximumNumber.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com321" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/CreateMaximumNumber.java" />
+              <option name="titleSlug" value="create-maximum-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/IncreasingTripletSubsequence.java">
           <value>
             <LeetcodeEditor>
@@ -14,6 +25,105 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/IntegerBreak.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/IntegerBreak.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com343" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/IntegerBreak.java" />
+              <option name="titleSlug" value="integer-break" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/LargestRectangleInHistogram.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/LargestRectangleInHistogram.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com84" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/LargestRectangleInHistogram.java" />
+              <option name="titleSlug" value="largest-rectangle-in-histogram" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/MaximalRectangle.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/MaximalRectangle.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com85" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/MaximalRectangle.java" />
+              <option name="titleSlug" value="maximal-rectangle" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/NextGreaterElementI.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/NextGreaterElementI.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com496" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/NextGreaterElementI.java" />
+              <option name="titleSlug" value="next-greater-element-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/NextGreaterElementIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/NextGreaterElementIi.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com503" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/NextGreaterElementIi.java" />
+              <option name="titleSlug" value="next-greater-element-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/One32Pattern.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/One32Pattern.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com456" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/One32Pattern.java" />
+              <option name="titleSlug" value="132-pattern" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/RemoveDuplicateLetters.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RemoveDuplicateLetters.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com316" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RemoveDuplicateLetters.java" />
+              <option name="titleSlug" value="remove-duplicate-letters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/RemoveKDigits.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/RemoveKDigits.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com402" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RemoveKDigits.java" />
+              <option name="titleSlug" value="remove-k-digits" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ReverseVowelsOfAString.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ReverseVowelsOfAString.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com345" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ReverseVowelsOfAString.java" />
+              <option name="titleSlug" value="reverse-vowels-of-a-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/SplitArrayIntoConsecutiveSubsequences.java">
           <value>
             <LeetcodeEditor>
@@ -22,6 +132,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/SplitArrayIntoConsecutiveSubsequences.java" />
               <option name="titleSlug" value="split-array-into-consecutive-subsequences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ValidPalindromeIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ValidPalindromeIi.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com680" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ValidPalindromeIi.java" />
+              <option name="titleSlug" value="valid-palindrome-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
